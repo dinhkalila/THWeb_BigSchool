@@ -18,6 +18,7 @@ namespace THWeb_BigSchool.Controllers
             _dbContext = new ApplicationDbContext();
         }
         [Authorize]
+        [HttpPost]
         [ValidateAntiForgeryToken]
       
         public ActionResult Create(CourseViewModel viewModel)
